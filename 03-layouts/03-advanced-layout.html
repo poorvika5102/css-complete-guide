@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced CSS Layout</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f6fa;
+    }
+
+    /* Page layout using Grid */
+    .layout {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      grid-template-rows: 60px 1fr 50px;
+      grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+      min-height: 100vh;
+    }
+
+    header {
+      grid-area: header;
+      background-color: #0984e3;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    aside {
+      grid-area: sidebar;
+      background-color: #dfe6e9;
+      padding: 20px;
+    }
+
+    main {
+      grid-area: main;
+      padding: 20px;
+    }
+
+    footer {
+      grid-area: footer;
+      background-color: #2d3436;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Sidebar navigation */
+    .nav {
+      list-style: none;
+      padding: 0;
+    }
+
+    .nav li {
+      margin-bottom: 10px;
+    }
+
+    /* Cards using Flexbox */
+    .cards {
+      display: flex;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      flex: 1;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="layout">
+    <header>
+      <h1>Dashboard</h1>
+    </header>
+
+    <aside>
+      <ul class="nav">
+        <li>Overview</li>
+        <li>Reports</li>
+        <li>Settings</li>
+      </ul>
+    </aside>
+
+    <main>
+      <h2>Main Content</h2>
+      <div class="cards">
+        <div class="card">Card One</div>
+        <div class="card">Card Two</div>
+        <div class="card">Card Three</div>
+      </div>
+    </main>
+
+    <footer>
+      © 2026 Dashboard Layout
+    </footer>
+  </div>
+
+</body>
+</html>
