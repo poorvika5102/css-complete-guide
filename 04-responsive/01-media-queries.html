@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Design with Media Queries</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    header {
+      background-color: #0984e3;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .box {
+      flex: 1;
+      background-color: #dfe6e9;
+      padding: 30px;
+      text-align: center;
+    }
+
+    /* Responsive breakpoint */
+    @media (max-width: 600px) {
+      .container {
+        flex-direction: column;
+      }
+
+      header {
+        background-color: #6c5ce7;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Responsive Layout</h1>
+    <p>Resize the browser to see the layout change</p>
+  </header>
+
+  <div class="container">
+    <div class="box">Content 1</div>
+    <div class="box">Content 2</div>
+    <div class="box">Content 3</div>
+  </div>
+
+</body>
+</html>
