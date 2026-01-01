@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Display and Position</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .block {
+      display: block;
+      background-color: #dfe6e9;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .inline {
+      display: inline;
+      background-color: #b2bec3;
+      padding: 10px;
+    }
+
+    .inline-block {
+      display: inline-block;
+      width: 150px;
+      height: 50px;
+      background-color: #74b9ff;
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    .hidden {
+      visibility: hidden;
+    }
+
+    .absolute-box {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: #fab1a0;
+      padding: 10px;
+    }
+
+    .relative-container {
+      position: relative;
+      height: 120px;
+      border: 2px dashed #636e72;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Display & Position</h1>
+
+  <div class="block">Block element</div>
+
+  <span class="inline">Inline element</span>
+
+  <div class="inline-block">Inline-block element</div>
+
+  <p class="hidden">
+    This text is hidden but still takes space.
+  </p>
+
+  <div class="relative-container">
+    Relative container
+    <div class="absolute-box">
+      Absolutely positioned element
+    </div>
+  </div>
+
+</body>
+</html>
