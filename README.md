@@ -28,30 +28,14 @@ deployed demo using GitHub Pages.
 ## Repository Structure
 
 css-complete-guide/
-│
-├── 01-basics/
-│   └── Selectors, properties, fundamentals
-│
-├── 02-box-model/
-│   └── Box model, display, positioning
-│
-├── 03-layouts/
-│   └── Flexbox and Grid layouts
-│
-├── 04-responsive/
-│   └── Media queries and responsive design
-│
-├── 05-advanced/
-│   └── Variables, transitions, animations
-│
-├── 06-mini-projects/
-│   └── Real-world styled landing page
-│
-├── index.html
-│   └── GitHub Pages entry point
-│
-└── README.md
-
+├── 01-basics/ Selectors, properties, fundamentals
+├── 02-box-model/ Box model, display, positioning
+├── 03-layouts/ Flexbox and Grid layouts
+├── 04-responsive/ Media queries and responsive design
+├── 05-advanced/ Variables, transitions, animations
+├── 06-mini-projects/ Real-world styled landing page
+├── index.html GitHub Pages entry point
+└── README.md Project documentation
 
 ---
 
